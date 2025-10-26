@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3505edd4092b31345ac4ba36106a7db9, type: 3}
+  m_Name: DiceConfig
+  m_EditorClassIdentifier: 
+  DicePrefab: {fileID: 8818039359596413293, guid: 20888050123550847982fc3521f31c23, type: 3}
+  DiceSprites:
+  - {fileID: 881284248587228930, guid: 1c6751ee152e5b441bc5b35b94c881ea, type: 3}
+  - {fileID: -4314872556885813932, guid: 1c6751ee152e5b441bc5b35b94c881ea, type: 3}
+  - {fileID: 7023949327649049969, guid: 1c6751ee152e5b441bc5b35b94c881ea, type: 3}
+  - {fileID: 6982583029822758956, guid: 1c6751ee152e5b441bc5b35b94c881ea, type: 3}
+  - {fileID: -2962491985531971848, guid: 1c6751ee152e5b441bc5b35b94c881ea, type: 3}
+  - {fileID: -993737210083468006, guid: 1c6751ee152e5b441bc5b35b94c881ea, type: 3}
+  - {fileID: -6647868936092574374, guid: 1c6751ee152e5b441bc5b35b94c881ea, type: 3}
