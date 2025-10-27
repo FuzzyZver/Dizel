@@ -4,4 +4,5 @@ using UnityEngine;
 public class GameConfig : ScriptableObject
 {
     public DiceConfig DiceConfig;
+    public CommonConfig CommonConfig;
 }

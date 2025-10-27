@@ -15,16 +15,21 @@ public class MagneticSlotSystem: Injects, IEcsRunSystem
 
             foreach(int j in _magneticFlagFilter)
             {
-                Transform slotTransform = _magneticFlagFilter.GetEntity(j).Get<TransformRef>().Transform;
-                float magneticDistance = slotTransform.localScale.x * _magneticForce;
-                Vector3 distance = dice.Get<TransformRef>().Transform.position - slotTransform.position;
-                if (distance.magnitude <= magneticDistance )
+                if(_magneticFlagFilter.GetEntity(j).Has<FirstPlayerFlag>() && RuntimeData.PlayerTurnId == 0 ||
+                    _magneticFlagFilter.GetEntity(j).Has<SecondPlayerFlag>() && RuntimeData.PlayerTurnId == 1)
                 {
-                    dice.Get<TransformRef>().Transform.position = slotTransform.position;
-                    dice.Del<MovableFlag>();
+                    Transform slotTransform = _magneticFlagFilter.GetEntity(j).Get<TransformRef>().Transform;
+                    float magneticDistance = slotTransform.localScale.x * _magneticForce;
+                    Vector3 distance = dice.Get<TransformRef>().Transform.position - slotTransform.position;
+                    if (distance.magnitude <= magneticDistance)
+                    {
+                        dice.Get<TransformRef>().Transform.position = slotTransform.position;
+                        dice.Del<MovableFlag>();
 
-                    _magneticFlagFilter.GetEntity(j).Get<SlotStorage>().Entity = dice;
-                    _magneticFlagFilter.GetEntity(j).Del<MagneticFlag>();
+                        _magneticFlagFilter.GetEntity(j).Get<SlotStorage>().Entity = dice;
+                        _magneticFlagFilter.GetEntity(j).Del<MagneticFlag>();
+                        EcsWorld.NewEntity().Get<CheckValuesColumnEvent>().Entity = dice;
+                    }
                 }
             }
         }

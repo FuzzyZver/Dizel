@@ -11,6 +11,7 @@ public class DiceActor: Actor
         entity.Get<TransformRef>().Transform = _transform;
         entity.Get<MovableFlag>();
         entity.Get<SpriteRendererRef>().SpriteRenderer = _spriteRenderer;
+        entity.Get<GameObjectRef>().GameObject = this.gameObject;
     }
 
     private void OnMouseDown()

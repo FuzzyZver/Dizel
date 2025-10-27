@@ -9,8 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a6ebf953fc250b4fafe6820b3eae6b6, type: 3}
-  m_Name: GameConfig
+  m_Script: {fileID: 11500000, guid: c5e2a5eb2ae68684693785a9d1d56545, type: 3}
+  m_Name: CommonConfig
   m_EditorClassIdentifier: 
-  DiceConfig: {fileID: 11400000, guid: 2b88057161630e7458d4363d2d04b1c4, type: 2}
-  CommonConfig: {fileID: 11400000, guid: 39ef3b97ee399a443ae2f6783704c37a, type: 2}
+  EndGameScreen: {fileID: 6296735026695813351, guid: 8def379e13462db4eb8f6d5d58188942, type: 3}

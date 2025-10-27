@@ -21,3 +21,5 @@ MonoBehaviour:
   - {fileID: -2962491985531971848, guid: 1c6751ee152e5b441bc5b35b94c881ea, type: 3}
   - {fileID: -993737210083468006, guid: 1c6751ee152e5b441bc5b35b94c881ea, type: 3}
   - {fileID: -6647868936092574374, guid: 1c6751ee152e5b441bc5b35b94c881ea, type: 3}
+  ChipOne: {fileID: -5615434521856093482, guid: 37c02a4cb64a68d49ad915fe9d01ed1e, type: 3}
+  ChipTwo: {fileID: -1644133143394737722, guid: 37c02a4cb64a68d49ad915fe9d01ed1e, type: 3}

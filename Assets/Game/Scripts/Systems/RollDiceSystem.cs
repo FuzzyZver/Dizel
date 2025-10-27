@@ -18,6 +18,7 @@ public class RollDiceSystem: Injects, IEcsInitSystem, IEcsRunSystem
     {
         foreach(int i in _rollDiceEventFilter)
         {
+            EcsWorld.NewEntity().Get<ChangeTurnEvent>();
             DiceActor dice = GameObject.Instantiate(_dicePrefab, SceneData.DiceSpawnPoint);
             dice.Init(EcsWorld);
             var diceEntity = dice.GetEntity();
